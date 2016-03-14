@@ -29,7 +29,7 @@ COPY            entrypoint.sh   /entrypoint.sh
 # Cleaning the Docker Image
 RUN             apt-get   -y    clean                                                                                               \
       &&        rm        -rf   /var/lib/apt/lists/*                                                                                \
-      &&        rm        -rf   /var/cache/oracle-jdk8-installer
+      &&        rm        -rf   /var/cache/*
 
 # CMD Insstruction
 CMD             ["/entrypoint.sh"]
