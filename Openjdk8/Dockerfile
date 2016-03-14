@@ -17,7 +17,7 @@ WORKDIR         $home
 RUN             apt-get  update                                                                                               \
       &&        apt-get  install  -y   apt-transport-https software-properties-common
 
-# Importing, Insatalling & Setting up JAVA --->  Open-JDK7
+# Importing, Insatalling & Setting up JAVA --->  Open-JDK8
 RUN             apt-get  update                                                                                               \
       &&        apt-get  install  -y   openjdk-8-jre
 
